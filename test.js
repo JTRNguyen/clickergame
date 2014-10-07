@@ -82,7 +82,7 @@ function checkValue()
         generateCostNumStub("numWorks", 0, "buttonWrapper", "Workers: ");
         generateCostNumStub("workerCosts", 10, "buttonWrapper", "Cost: $");
         generateInfoStub("addInfo0", "You can now hire workers! Workers will automatically do your job for you at a rate of ", "info", 1);
-        generateInfoStub("addInfo1", "1/s!", "info", 0);
+        generateInfoStub("addInfo1", "$1/s!", "info", 0);
     }
 }
 
@@ -130,7 +130,7 @@ function upgradeWorkers()
         increment = increment + (workerValue * numWorkers);
         workerValue = workerValue * 2;
         document.getElementById("dps").innerHTML = "Automatic dollars per second: $" + numberWithCommas(increment);
-        document.getElementById("addInfo1").innerHTML = numberWithCommas(workerValue) + "/s!";
+        document.getElementById("addInfo1").innerHTML = "$" + numberWithCommas(workerValue) + "/s!";
         document.getElementById("workerUpgradeCost").innerHTML = "Cost: $" + numberWithCommas(doubleWorkerCost);
         document.getElementById("hi").innerHTML = "Dollars: $" + numberWithCommas(score);
     }
@@ -270,7 +270,7 @@ function restoreGame(saveData)
         if(numWorkers>=10)
         {
             createWorkerUpgrade();
-            document.getElementById("addInfo1").innerHTML = numberWithCommas(workerValue) + "/s!";
+            document.getElementById("addInfo1").innerHTML = "$" + numberWithCommas(workerValue) + "/s!";
             document.getElementById("workerUpgradeCost").innerHTML = "Cost: $" + numberWithCommas(doubleWorkerCost);
         }
         if(doubleClickCost>1000)
