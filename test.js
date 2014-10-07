@@ -10,7 +10,7 @@ window.onload = function(){
     {
         branch = 0;
         score = 0;
-        click = 1000000000000;
+        click = 1;
         hasTen = 0;
         increment = 0;
         numWorkers = 0;
