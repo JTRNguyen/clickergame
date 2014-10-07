@@ -1,0 +1,42 @@
+#info
+{
+	display: inline-block;
+	left: 350px;
+	width: 250px;
+	position: absolute;
+}
+
+#clickers
+{
+	display: inline-block;
+	width: 250px;
+	position: absolute;
+}
+
+#upgrades
+{
+	display: inline-block;
+	width: 250px;
+	position: absolute;
+	left: 700px;
+}
+
+#game
+{
+	display:none;
+}
+
+#initialBranches
+{
+	text-align: center;
+}
+
+#profession
+{
+	display: inline;
+}
+
+#task
+{
+	display: inline;
+}

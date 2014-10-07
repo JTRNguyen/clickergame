@@ -1,0 +1,38 @@
+<html>
+	<head>
+		<script type="text/javascript" src="test.js"></script>
+		<link rel="stylesheet" type="text/css" href="test.css">
+	</head>
+	<body>
+		<div id="initialBranches">
+			<h3>Pick a job to start with!</h3>
+			<input type="image" onclick="pickBranch(1)" alt="Lemonade Stand" src="Lemonade.png">
+			<button type="button" onclick="pickBranch(2)">Walk Dogs</button>
+			<button type="button" onclick="pickBranch(3)">Paper Boy</button>
+		</div>
+		<div id="game">
+			<div id="clickers">
+				<div id="buttonWrapper">
+					<!--<button id="firstButton" type="button" onclick="addOne()">Click Me!</button>-->
+					<input type="image" id="firstButton" src="img_submit.gif" alt="Submit" onclick="addOne()"> 
+					<div id="hi"> Dollars: $0 </div>
+					<span id="dps"> Automatic dollars per second: $0</span>
+				</div>
+				<div id="deleteSave">
+					<button id="clearSave" type="button" onclick="clearSave()"> Clear Save Data (Refresh after) </button>
+				</div>
+			</div>
+			<div id="info">
+				INFORMATION
+				<br>
+				<span>You are a</span> <span id="profession"> </span>
+				
+				<span>Make some money by </span> <span id="task"> </span>
+			</div>
+			<div id="upgrades">
+				UPGRADES
+			</div>
+		</div>
+
+	</body>
+</html>
